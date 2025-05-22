@@ -92,15 +92,7 @@ const HomePage = () => {
                     ABOUT
                 </Typography>
                 <Typography variant='body1'>
-                    &emsp; As a dedicated professional with over a decade of experience in 
-                    customer service and retail management, complemented by a bachelor of science 
-                    in Computer Information Systems specializing in software programming, I offer a 
-                    strong foundation for software development. Proficient in JavaScript, 
-                    Java, related technologies, and adept in various development tools, I excel in crafting 
-                    user-friendly software solutions by leveraging my understanding of end-user 
-                    perspectives. I am eager to transition into a junior software engineering role to 
-                    further expand my knowledge and skills while actively contributing to innovative 
-                    projects.
+                    &emsp; As a passionate and adaptable software developer with one year of professional experience in .NET and Angular development, I bring a unique blend of technical skill and real-world insight shaped by over a decade in customer service and retail management. Holding a Bachelor of Science in Computer Information Systems with a focus on software programming, I am proficient in JavaScript, Java, C#, SQL, and modern frameworks across both front-end and back-end development. My deep understanding of end-user needs—honed through years of direct customer interaction—enables me to create intuitive and impactful software solutions. I am now looking to grow further in a junior or mid-level software engineering role where I can contribute to meaningful projects and continue evolving as a developer.
                 </Typography>
 
             </Box>
