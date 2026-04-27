@@ -15,7 +15,6 @@ const ProjectData =
             "technologies": [
                 ".NET Core, Angular, AWS Elastic Beanstalk, AWS RDS"
             ],
-            "demoLink": "https://mk12-ftf8ddcwajb6b6cn.canadacentral-01.azurewebsites.net/",
             "sourceLink": "https://github.com/sblevins-dev/MK12"
         },
         {
