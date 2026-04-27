@@ -1,33 +1,25 @@
 import { Box } from '@mui/material'
 import HomePage from './HomePage.jsx'
-import hero from '../images/hero.jpg'
-import SecondSection from './SecondSection.js'
+import image from '../images/image.png'
 
 const Home = () => {
 
     return (
         <Box
             sx={{
-                backgroundImage: `url(${hero})`,
+                minHeight: '100vh', // 👈 change from height
+                backgroundAttachment: 'fixed', // 👈 THIS is what you meant
+                overflowY: 'scroll',
+                backgroundImage: `url(${image})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                color: 'white',
+                py: { xs: 8, md: 10 },
                 height: '100vh',
-                position: 'relative'
+                position: 'relative',
             }}
         >
-            <Box
-                sx={{
-                    bgcolor: 'rgba(0, 0, 0, 0.5)',
-                    position: 'absolute',
-                    height: '100%',
-                    width: '100%',
-                    top: 0,
-                    left: 0,
-                }}>
-                
-                <HomePage />
-                <SecondSection />
-            </Box>
+            <HomePage />
         </Box>
     )
 }

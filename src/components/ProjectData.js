@@ -3,6 +3,7 @@ import suite from "../images/suite.png"
 import guitar from "../images/guitar.png"
 import pbConsole from "../images/pb-console.png"
 import mk from "../images/mk.png"
+import eshop from "../images/eshop.png"
 
 const ProjectData =
     [
@@ -14,17 +15,22 @@ const ProjectData =
             "technologies": [
                 ".NET Core, Angular, AWS Elastic Beanstalk, AWS RDS"
             ],
-            "demoLink": "http://mk12-env.eba-3f8ut8bv.us-east-1.elasticbeanstalk.com/"
+            "sourceLink": "https://github.com/sblevins-dev/MK12"
         },
         {
             "id": 2,
-            "projectTitle": "Powerball Console",
-            "details": "Powerball Console Application built with Java. This application fetches Powerball drawing data since 2020 and provides functionalities to print drawings, calculate the most frequently occurring white balls and Powerball, and generate a unique combination of numbers that has never been drawn before.",
-            "image": pbConsole,
+            "projectTitle": "EShop",
+            "details": "EShop is a full-stack web application built with Angular on the frontend and ASP.NET Core on the backend, using SQL Server for data storage. The app serves product data and images, styled with Tailwind CSS, and is deployed on Azure App Service. Key development tasks included building RESTful APIs, managing environment variables for logging and runtime configuration, and troubleshooting deployment issues such as 500.30 Internal Server Errors using Azure log streaming and web.config stdout logs. The project demonstrates experience in full-stack development, cloud deployment, and application debugging.",
+            "image": eshop,
             "technologies": [
-                "Java"
+                ".NET Core",
+                "Angular",
+                "SQL Server",
+                "Azure",
+                "Tailwind CSS"
             ],
-            "sourceLink": "https://github.com/sblevins-dev/powerball-console"
+            "demoLink": "https://eshop2-cpdebpdeedavgjfu.centralus-01.azurewebsites.net/",
+            "sourceLink": "https://github.com/sblevins-dev/EShop"
         },
         {
             "id": 3,
@@ -44,6 +50,16 @@ const ProjectData =
         },
         {
             "id": 4,
+            "projectTitle": "Powerball Console",
+            "details": "Powerball Console Application built with Java. This application fetches Powerball drawing data since 2020 and provides functionalities to print drawings, calculate the most frequently occurring white balls and Powerball, and generate a unique combination of numbers that has never been drawn before.",
+            "image": pbConsole,
+            "technologies": [
+                "Java"
+            ],
+            "sourceLink": "https://github.com/sblevins-dev/powerball-console"
+        },
+        {
+            "id": 5,
             "projectTitle": "Guitar-Shop",
             "details": "Guitar Haven is a personal e-commerce project built using the Next.js framework, ensuring a fast and seamless user experience. The site features a dynamic catalog of guitars and accessories, leveraging server-side rendering for optimal performance.",
             "image": guitar,
@@ -55,7 +71,7 @@ const ProjectData =
         },
         
         {
-            "id": 5,
+            "id": 6,
             "projectTitle": "Hotel Booking",
             "details": "Built using React for the frontend and Java Spring for the backend, leverages the Booking.com API to deliver a seamless user experience. Users can search for hotels, view detailed listings, check real-time availability, and compare competitive rates, all through an intuitive and responsive interface. The integration with Booking.com ensures access to a vast database of accommodations, offering users a comprehensive selection tailored to their preferences and needs.",
             "image": suite,

@@ -5,6 +5,7 @@ import hero from "../images/hero.jpg"
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import image from '../images/image.png'
 
 const TechnologiesSection = styled(Box)({
     display: 'flex',
@@ -38,25 +39,19 @@ const ProjectDetails = () => {
     return (
         <Box
             sx={{
-                backgroundImage: `url(${hero})`,
+                minHeight: '100vh', // 👈 change from height
+                backgroundAttachment: 'fixed', // 👈 THIS is what you meant
+                overflowY: 'scroll',
+                backgroundImage: `url(${image})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                minHeight: '100vh',
-                height: '100%',
-                width: '100%',
-                position: 'relative'
+                color: 'white',
+                py: { xs: 8, md: 10 },
+                height: '100vh',
+                position: 'relative',
             }}
         >
-            <Box
-                sx={{
-                    bgcolor: 'rgba(0, 0, 0, 0.5)',
-                    position: 'absolute',
-                    height: '100%',
-                    width: '100%',
-                    top: 0,
-                    left: 0,
-                    overflow: 'auto'
-                }}>
+            <Box>
                 <Container
                     sx={{
                         color: 'white',

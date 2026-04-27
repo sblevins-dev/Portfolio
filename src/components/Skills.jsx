@@ -10,17 +10,17 @@ const SkillSectionWrapper = styled(Box)({
     justifyContent: "center",
     color: 'white',
     position: 'relative',
-    '&::before': {
-        content: '""',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        backgroundColor: '#16161696',
-        backdropFilter: "blur(5px) saturate(100%)",
-        zIndex: '0'
-    }
+    // '&::before': {
+    //     content: '""',
+    //     position: 'absolute',
+    //     top: 0,
+    //     left: 0,
+    //     width: '100%',
+    //     height: '100%',
+    //     backgroundColor: '#16161696',
+    //     backdropFilter: "blur(5px) saturate(100%)",
+    //     zIndex: '0'
+    // }
 })
 
 const SkillSection = styled(Box)({

@@ -4,6 +4,21 @@ import { MyContext } from './MyContext'
 import { useLocation, useNavigate } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu';
 
+const glassCard = {
+  backdropFilter: 'blur(18px)',
+  background: `
+    linear-gradient(
+      180deg,
+      rgba(22,22,22,0.72) 0%,
+      rgba(12,12,12,0.68) 100%
+    )
+  `,
+  boxShadow: `
+    0 10px 30px rgba(0,0,0,0.25),
+    0 1px 0 rgba(255,255,255,0.04) inset
+  `,
+}
+
 
 const pages = ["HOME", "PROJECTS", "CONTACT"]
 const NavButton = styled(Button)({
@@ -47,10 +62,7 @@ const NavigationBar = () => {
 
     return (
         <AppBar position='fixed'
-            sx={{
-                bgcolor: 'rgba(0, 0, 0, 0.7)',
-                backdropFilter: "blur(5px) saturate(100%)"
-            }}
+            sx={{...glassCard}}
         >
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
