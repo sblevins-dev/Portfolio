@@ -61,8 +61,8 @@ const NavigationBar = () => {
     };
 
     return (
-        <AppBar position='fixed'
-            sx={{...glassCard}}
+        <AppBar position='fixed'            
+            sx={{...glassCard, marginRight: { xs: 0, md: '20px' }}}
         >
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
